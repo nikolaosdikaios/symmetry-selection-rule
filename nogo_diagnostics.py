@@ -14,11 +14,6 @@ Fig. S1 needs:
   de_trace_cache.npy         best-so-far Fisher along a differential-evolution
                              search of the same baseline (panel b)
 
-Using the independent baseline (not the infinite-protection arm) matches the
-Letter/SM text for Fig. S1, whose point is that the CLASSICAL baseline optimum
-is a broad, repeatedly found basin (44%% within 5%%, 7%% within 1%%) and is
-independently confirmed by a global search converging to ~5.97e-2.
-
 Run:
     python3 nogo_diagnostics.py     # ~1-3 min
     python3 export_csvs.py          # picks up both caches -> data/*.csv
