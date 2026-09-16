@@ -4,7 +4,6 @@ make_figures.py
 ===============
 Figure production for the Letter and the Supplemental Material.
 
-WHAT THIS SCRIPT GENERATES FULLY, FROM FIRST PRINCIPLES (no external data)
   fig1.pdf       Letter Fig. 1. The level scheme schematic, panels (a),(b).
   fig6.pdf       SM Fig. S3. Many body dark state QFI scalings. The two
                  curves are the exact closed forms F = N/2 (adjacent pairing)
