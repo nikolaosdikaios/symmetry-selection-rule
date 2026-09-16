@@ -2,36 +2,6 @@
 """
 verify_selection_rule.py
 ========================
-Standalone verification companion to:
-
-  "The symmetry that protects a long-lived spin state also hides it"
-  (revised manuscript)
-
-Independently re-derives, from scratch (NumPy/SciPy only):
-
-  [A] The brightness/darkness algebra, Eqs. (2)-(3):
-        F+|S> = 0,  (I1+ - I2+)|S> = -sqrt(2)|T+>,  (I1z - I2z)|S> = |T0>.
-  [B] The S-T0 block: splitting 2*pi*sqrt(J^2+d^2), mixing tan(2theta)=d/J.
-  [C] Intra-pair dipolar algebra: T_2m|S> = 0 for all m; K = sum T'T is an
-        SU(2) scalar with K|S> = 0  (Appendix A).
-  [D] Mechanism-resolved Lindblad rates, Table I of Appendix A:
-        - intra-pair DD (extreme narrowing): R_S = 0 exactly,
-          R_c(S-T0) = R2/3 exactly, S-T0 and F+ exact eigenoperators,
-          T1 = T2 recovered;
-        - correlated (common-mode) fields prop. to Fz: R_S = R_c = 0;
-        - uncorrelated local fields: no protection;
-        - anticorrelated fields: 2x destruction.
-  [E] Single-exponentiality of the F+ decay under DD; the headline ratio
-        T_c/T2 = 3 (dipole-limited coherence budget).
-  [F] The closed-form window law of Appendix E, Eq. (E4):
-        A(u) = u P^2 (1+u) / (1+Pu)^2,   u = (delta/J)^2,  P = T_c/T2,
-        with peak ~ P/4 at delta/J ~ P^(-1/2) and lower unity edge ~ 1/P.
-        Also demonstrates that the *uncorrected* law A = u [P(1+u)/(1+Pu)]^2
-        is unbounded at large u -- why the law's stated domain is
-        "through the peak" only.
-  [G] Collective vs individually detected independent baseline (FID model):
-        F_coll / F_ind ~ 6 (pi delta T2)^2 below the linewidth
-        (Sec. V A / Fig. 3 caption).
 
 Run:  python3 verify_selection_rule.py
 """
