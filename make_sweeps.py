@@ -3,25 +3,11 @@
 make_sweeps.py  --  generate phase_data.npy and loophole_data.npy, then check
                     them against the numbers quoted in the Letter
 =============================================================================
-These two files are produced by replicate.py itself:
-
-    python replicate.py phase       ->  phase_data.npy      (Fig. 2a)
-    python replicate.py loophole    ->  loophole_data.npy   (Fig. 2b)
-
-This wrapper runs both in the CURRENT directory and then verifies the result,
-because the numbers the manuscript quotes (collective plateau, window edges,
-peak) are exactly the numbers that have repeatedly drifted between the text
-and the figures. Running the sweeps without checking them is what allowed an
-embedded dataset to reach the figures while the text quoted a live one.
 
 Usage
     python make_sweeps.py              # run both sweeps, then verify
     python make_sweeps.py --check-only # skip the sweeps, verify existing files
 
-Timing: roughly four minutes for the collective sweep and fourteen for the
-broken-symmetry sweep, since every grid point runs a full multistart
-optimization. replicate.py saves after each grid point, so an interrupted run
-leaves usable partial data.
 
 Requires replicate.py in the same directory.
 """
